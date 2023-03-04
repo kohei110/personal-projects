@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "teak-spot-379405",
+  "private_key_id": "85d7b008753beefd9e33f44fe0118bc055350b28",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC9EHMdpSzYAaem\nJvsmSDIyBXcgeW5vF4T3jVf3P4tPAHE0B/BKzhiu+chl6VH7t+xaphihkLptsSxd\nanim0uR/f+CDo8llL50gpZV0BR83J1g2I5+6zmhfNb1YFV85VtyenZ9ukaM7dB5w\nZMFuLUfFOovzV9HlDAziKVl+SKfTWCq8OpWblVdvp7WD4N6ziJtHP0k9+m2pjDZ9\nBC4vqdZwljmTzHDeQ8BaR+BuZcvGma6fz0UhMAs9h2Vtc1MajNkhAfHhoci+EUBq\nSQrnWz2WLL/qQs6uVLXSJFATFB8Lsrswlh30rwXLsJ80w5TflFdH8QiiFMRg89EI\npAD1xvg1AgMBAAECggEAFyEXjCVkXoqZSWTUbcMATQlJIRJp9bJBZI2ImOlPsBsE\nPlLITUZ4U5OgNgN8sZg3FIHkWoObowa9QDJhzzrWlFh/DWuwnC3egZtwNLDZuEQa\ncQkbpd1RfHBVGR0IOLoNJGRxGDQ97WyPur1AwqtMb+7xJxRzy5sVSme3mJDn4x1c\nkE9Mai6tjL3qEErywF0DXzJolGkzqkuriWXvLTGthWB+pm5wOUzP90L/9/Wip4N9\ncZR36AAC/T1VXpgXE1O8A3r0pnZoZrU8cDDHjHa+dhbvzwnH81wJoE/qzQi21XZn\na2lkXhzB8JlUc2E9OMDUqD+Ui+zXkczqkPRrie9O8wKBgQDxnum0rBLX2t8vycek\nYQLPIXCCrJbGm2YFVV7mtZY9kRFlYAkaUmW/ttHHWk3OnceBpji206jzwi1MZqIe\nwIp5Uk6Juo1/q/3F9OsbYSgluh7PYywnot4Q1Je5m7sOwLzUF9mj0eYYktJjsXaQ\n3joJq7kGNbxfPpwz0Fbo/jR9gwKBgQDIUNbyOfOzBfHk414t+K3AIp8ose7dl5Dc\nK6t0juI57VQBwL9wCPPRea6LCdtVfU22/aVjSz9QJlwKwZP1ATvKLQYBiCELvrvn\nveOq3dq+rxmc/8wtANTCUrSbzNMOmEms3KZTGeNpOjuDy8rNHhqrUpy5RWThQhC3\nrZzrUUC95wKBgQCGye/2KkgYwrDfJ+GHgdbfVfg97anvAaHYN9fJPGOj1Nmvg/OQ\nC4dXe9VrMKVXLg2t9dyNoWYPFbPPezHVlfOp2pCVpMxq/LeFRywhCgIribjGWLy5\nH9Jh8TbzBD1F7Z9pciSnjuCdtMpJcyaBinc2DeYZ4MBFIdhhz0eskqMVoQKBgAMp\n26sppSKfpmlR+evJ8JyHL3JKFRakzSHdArEtjH8Ts27vp1ZSnd8iB9KkTjV0bCTG\nrrT5vD88y9lTo02MPnB784tUpgj0cy0+v3i0Vj8KruHe3E+dor6K5dVMD808NHWp\namsHjqLby5LSRhqlLhCkllsKsIQqMe9kq4S/3MDjAoGBAIQuLtLko3kZ2SO5tHZn\nGY06j5uGlUT6jCOblvowLcdBp0wLK27tNbjYi7V7ERjdO4I43nTRmB1ZUSmyjWM2\nWTORX2Or0Vpspec3d81Y4aae8UoliQw2kr0YA0toA482gNYQTtmge6BayP56QsMz\nf8mFQS8HKlttV/bGcl9N2syS\n-----END PRIVATE KEY-----\n",
+  "client_email": "sheetdb@teak-spot-379405.iam.gserviceaccount.com",
+  "client_id": "116543977080305439635",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sheetdb%40teak-spot-379405.iam.gserviceaccount.com"
+}
