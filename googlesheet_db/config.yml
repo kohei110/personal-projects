@@ -1,0 +1,7 @@
+API_SCOPE:
+  - 'https://www.googleapis.com/auth/drive'
+  - 'https://www.googleapis.com/auth/spreadsheets'
+PATH_TO_JSON: '/Users/nkohei/Workspace/personal-projects/auth/teak-spot-379405-85d7b008753b.json'
+WORKBOOK_NAME: 'test_sheet_db_20230304'
+SHEET_NAME: 'sheet_abc'
+EMAIL: 'kohei.nishitani@gmail.com'
