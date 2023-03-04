@@ -6,7 +6,8 @@ import os
 API_SCOPE1 = 'https://www.googleapis.com/auth/spreadsheets'
 API_SCOPE2 = 'https://www.googleapis.com/auth/drive'
 PATH_TO_JSON = '/Users/nkohei/Workspace/personal-projects/auth/teak-spot-379405-85d7b008753b.json'
-SHEET_NAME = 'test_sheetdb'
+SHEET_NAME = 'test_sheetdb_123'
+EMAIL = 'kohei.nishitani@gmail.com'
 
 class ApiSetting:
     def __init__(self) -> None:
@@ -29,26 +30,44 @@ class GoogleSpreadsheetHandler:
     # authorise
         gspread_client = gspread.authorize(credential)
         return gspread_client
-    
-    def create_workbook(self, workbookname):
-        print(gspread_client.openall())
 
-    # def createNewSheetIfNotExist(title):
-    #     if title not in [sh.title for sh in gc.openall()]:
-    #         gc.create(title)
-    #     print([sh.title for sh in gc.openall()])
+    def check_workbooks(self, gspread_client, workbookname):
+        workbook_list = []
+        for i in gspread_client.openall():
+            workbook_list.append(i.title)
+        # print(workbook_list)
+        if workbookname in workbook_list:
+            return True
+        else:
+            return False
 
-credential = ApiSetting().api_scope([API_SCOPE1, API_SCOPE2])
-gspread_client = GoogleSpreadsheetHandler().authorize(credential)
-GoogleSpreadsheetHandler().create_workbook('test_sheetdb')
+    def create_workbook(self, gspread_client ,workbookname):
+        if self.check_workbooks(gspread_client, workbookname):
+            pass
+        else:
+            if workbookname not in [sh.title for sh in gspread_client.openall()]:
+                sh = gspread_client.create(workbookname)
+                sh.share(EMAIL, perm_type='user', role='writer')
 
-# spread_sheet_name = SHEET_NAME
+            print('new workbook created, please check email')
 
-# # open sheet
-# sheet = gspread_client.open(spread_sheet_name).sheet1
 
-# # D 列の 22行目の情報を表示
-# print(sheet.acell('D12').value)
 
-# # A 列の 1行目の内容を更新する
-# sheet.update_acell('A11', 'Hello, Sheets API')
+# Usage example
+api = ApiSetting()
+credentials = api.api_scope([API_SCOPE1,API_SCOPE2])
+gs_handler = GoogleSpreadsheetHandler()
+gspread_client = gs_handler.authorize(credentials)
+gs_handler.create_workbook(gspread_client, SHEET_NAME)
+
+#checking
+# gs_handler.check_workbooks(gspread_client, SHEET_NAME)
+
+# # # open sheet
+# # sheet = gspread_client.open(spread_sheet_name).sheet1
+
+# # # D 列の 22行目の情報を表示
+# # print(sheet.acell('D12').value)
+
+# # # A 列の 1行目の内容を更新する
+# # sheet.update_acell('A11', 'Hello, Sheets API')
