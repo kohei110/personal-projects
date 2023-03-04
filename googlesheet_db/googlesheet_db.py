@@ -96,6 +96,10 @@ class GoogleSpreadsheetHandler:
             return None
 
 if __name__ == '__main__':
+    # print(os.getcwd())
+    # files = [f for f in os.listdir('.') if os.path.isfile(f)]
+    # for f in files:
+    #     print(f)
     # read configuration
     with open('config.yml', 'r') as f:
         config = yaml.load(f, Loader=yaml.FullLoader)
