@@ -114,8 +114,6 @@ if __name__ == '__main__':
     # create
     gs_handler.create_workbook(gspread_client, WORKBOOK_NAME)
 
-# checking
-# gs_handler.check_workbooks(gspread_client, SHEET_NAME)
 
 # # # open sheet
 # # sheet = gspread_client.open(spread_sheet_name).sheet1

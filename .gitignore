@@ -1,2 +1,4 @@
 auth/
 /googlesheet_db/config.yml
+__pycache__/
+.DS_Store
