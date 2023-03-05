@@ -30,5 +30,5 @@ if __name__ == '__main__':
     # data collection
     collector = data_collector.collection()
     df_sample = collector.get_sample()
-    df_sample = df_sample.astype(str)
+    df_sample = df_sample.astype(str) #need to convert to text before passing to Google sheet
     worksheet.update([df_sample.columns.values.tolist()] + df_sample.values.tolist())
