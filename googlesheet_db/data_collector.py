@@ -12,6 +12,14 @@ class collection:
         return df_sample
     
     ## add more detailed api or crawl logic later
+    '''
+    def get_sheet_info
+
+    def get_diff
+
+    def update
+    
+    '''
 
 if __name__ == '__main__':
     data_collector = collection()
