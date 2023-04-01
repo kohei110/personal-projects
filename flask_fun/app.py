@@ -11,13 +11,14 @@ class Task(db.Model):
     detail = db.Column(db.String(300), nullable=False)
     due = db.Column(db.DateTime, nullable=False)
 
-@app.route('/landingpage')
+@app.route('/')
 def landing_page():
     return render_template('landing.html')
 
 @app.route('/main')
 def main():
     return render_template('main.html')
+
 
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
